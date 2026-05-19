@@ -1,0 +1,80 @@
+:root {
+  /* Brand Colors */
+  --color-primary: #93ccea;
+  --color-primary-hover: #4fa8d3;
+  --color-primary-soft: #e8f6fc;
+
+  --color-secondary: #ffe08a;
+  --color-secondary-hover: #f5c94b;
+  --color-secondary-soft: #fff4c7;
+
+  --color-tertiary: #ffb4a2;
+  --color-tertiary-soft: #ffe1d9;
+
+  /* Base Colors */
+  --color-background: #f8fbfd;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f3f8fb;
+
+  /* Text Colors */
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #6b7280;
+  --color-text-muted: #9ca3af;
+  --color-text-inverse: #ffffff;
+
+  /* Border Colors */
+  --color-border: #d8eaf2;
+  --color-border-strong: #b9dcec;
+
+  /* Status Colors */
+  --color-success: #4caf8f;
+  --color-warning: #f5b84b;
+  --color-error: #e76f6f;
+  --color-info: #4fa8d3;
+
+  /* ==============================
+    Font Family
+    ============================== */
+  --font-primary: 'Pretendard', system-ui, sans-serif;
+
+  /* ==============================
+    Font Size
+    기준: 16px = 1rem
+    ============================== */
+
+  /* Display */
+  --text-display-lg: 3.5rem; /* 56px */
+  --text-display-md: 2.75rem; /* 44px */
+
+  /* Heading */
+  --text-heading-h1: 2.25rem; /* 36px */
+  --text-heading-h2: 1.75rem; /* 28px */
+  --text-heading-h3: 1.5rem; /* 24px */
+
+  /* Title */
+  --text-title-lg: 1.25rem; /* 20px */
+  --text-title-md: 1.125rem; /* 18px */
+
+  /* Body */
+  --text-body-lg: 1.125rem; /* 18px */
+  --text-body-md: 1rem; /* 16px */
+  --text-body-sm: 0.875rem; /* 14px */
+
+  /* Label */
+  --text-label-lg: 1rem; /* 16px */
+  --text-label-md: 0.875rem; /* 14px */
+
+  /* Caption */
+  --text-caption-md: 0.8125rem; /* 13px */
+  --text-caption-sm: 0.75rem; /* 12px */
+
+  /* ==============================
+    Line Height
+    단위 없는 값 사용
+    글자 크기에 비례해서 자연스럽게 적용됨
+    ============================== */
+
+  --leading-display-lg: 1.2;
+  --leading-heading: 1.35;
+  --leading-body: 1.7;
+}
