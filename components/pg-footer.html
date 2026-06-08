@@ -1,54 +1,114 @@
-<footer class="pg-footer">
-  <div class="pg-inner">
-    <div class="pg-footer-top">
-      <div class="pg-footer-brand">
-        <div class="pg-footer-logo">
-          <img src="/asset/img/logo/today-pen-mute.svg" alt="" />
-        </div>
+ <footer id="footer" class="pg-footer" data-ez-layout="layout1" data-ez="contents-1tcl04q-1">
+      <div class="pg-inner" module="Layout_footer">
+        <div class="pg-footer-top">
+          <!-- Logo -->
+          <div class="pg-footer-brand" module="Layout_LogoBottom">
+            <div class="pg-footer-logo">
+              <a href="/"><img src="/asset/img/logo/today-pen-mute.svg" alt="" /></a>
+            </div>
+          </div>
+          <!-- //pg-footer-brand -->
 
-        <div class="pg-footer-links">
-          <a href="#" class="pg-footer-link">
-            <img src="/asset/img/icon/star.svg" alt="즐겨찾기" />
-          </a>
-          <a href="#" class="pg-footer-link">
-            <img src="/asset/img/icon/instagram-logo.svg" alt="인스타그램" />
-          </a>
-          <a href="#" class="pg-footer-link">
-            <img src="/asset/img/icon/mail.svg" alt="메일" />
-          </a>
+          <!-- SNS Links -->
+          <div class="pg-footer-links" data-ez-group="sns">
+            <a
+              data-ez-item="instagram"
+              href="https://instagram.com/"
+              target="_blank"
+              class="pg-footer-link"
+            >
+              <img src="/asset/img/icon/instagram-logo.svg" alt="인스타그램" />
+            </a>
+            <a data-ez-item="mail" href="mailto:contact@todaypen.com" class="pg-footer-link">
+              <img src="/asset/img/icon/mail.svg" alt="메일" />
+            </a>
+            <a data-ez-item="mail" href="mailto:contact@todaypen.com" class="pg-footer-link">
+              <img src="/asset/img/icon/star.svg" alt="즐겨찾기" />
+            </a>
+          </div>
+          <!-- //pg-footer-links -->
         </div>
+        <!-- //pg-footer-top -->
+
+        <!-- Policy Links -->
+        <div class="pg-footer-policy" data-ez-group="shortcut">
+          <div data-ez-role="title" style="display: none">바로가기</div>
+          <ul data-ez-role="list" class="list">
+            <li data-ez-item="agreement">
+              <a href="/member/mall_agreement.html">이용약관</a>
+            </li>
+            <span class="pg-footer-divider"></span>
+
+            <li data-ez-item="privacy">
+              <a href="/member/privacy.html"><strong>개인정보처리방침</strong></a>
+            </li>
+            <span class="pg-footer-divider"></span>
+            <li data-ez-item="guide"><a href="/shopinfo/guide.html">이용안내</a></li>
+          </ul>
+        </div>
+        <!-- //pg-footer-policy-list -->
+
+        <!-- Customer Service Info -->
+        <div module="Layout_Info" class="pg-footer-cs" data-ez-group="cs">
+          <div class="pg-footer-title" data-ez-role="title">고객센터 정보</div>
+          <div data-ez-role="list">
+            <div data-ez-item="phone" class="pg-footer-contact">
+              <span>상담/주문전화</span>
+              <span class="pdr10"></span><span data-ez-role="value">{$phone}</span>
+            </div>
+            <div data-ez-item="email" class="pg-footer-contact">
+              <span>상담/주문 이메일</span><span data-ez-role="value">{$inquiry_email}</span>
+            </div>
+            <div data-ez-item="runtime" class="pg-footer-contact">
+              <span>CS운영시간</span> <span data-ez-role="value">{$runtime}</span>
+            </div>
+          </div>
+        </div>
+        <!-- //pg-footer-cs -->
+
+        <!-- Shop Info -->
+        <div class="pg-footer-info" data-ez-group="info">
+          <div class="pg-footer-title" data-ez-role="title">쇼핑몰 기본정보</div>
+          <div class="pg-footer-info-list" data-ez-role="list">
+            <div data-ez-item="company_name">
+              <span data-ez-role="field">상호명 :</span>
+              <span data-ez-role="value">{$company_name}</span>
+            </div>
+            <div data-ez-item="president_name">
+              <span data-ez-role="field">대표자명 :</span>
+              <span data-ez-role="value">{$president_name}</span>
+            </div>
+            <address data-ez-item="address">
+              <span data-ez-role="field">사업장 주소 :</span>
+              <span data-ez-role="value">{$mall_zipcode} {$mall_addr1} {$mall_addr2}</span>
+            </address>
+            <div data-ez-item="phone">
+              <span data-ez-role="field">대표 전화 :</span>
+              <span data-ez-role="value">{$phone}</span>
+            </div>
+            <div data-ez-item="company_regno">
+              <span data-ez-role="field">사업자 등록번호 :</span>
+              <span data-ez-role="value">{$company_regno}</span>
+            </div>
+            <div data-ez-item="network_regno">
+              <span data-ez-role="field">통신판매업 신고번호 :</span>
+              <span data-ez-role="value">{$network_regno} {$biz_no_link}</span>
+            </div>
+            <div data-ez-item="cpo_name">
+              <span data-ez-role="field">개인정보보호책임자 :</span>
+              <span data-ez-role="value">{$cpo_name}</span>
+            </div>
+          </div>
+          <!-- //pg-footer-info-list -->
+        </div>
+        <!-- //pg-footer-info -->
+
+        <div class="pg-footer-bottom">
+          <p class="pg-footer-copy">
+            Copyright © {$mall_name}. All Rights Reserved. Hosting by Cafe24 Corp.
+          </p>
+        </div>
+        <!-- //pg-footer-bottom -->
       </div>
-
-      <div class="pg-footer-info">
-        <div class="pg-footer-policy-list">
-          <a href="#" class="pg-footer-policy">개인정보처리방침</a>
-          <span class="pg-footer-divider" aria-hidden="true"></span>
-          <a href="#" class="pg-footer-policy">이용약관</a>
-          <span class="pg-footer-divider" aria-hidden="true"></span>
-          <a href="#" class="pg-footer-policy">결제정보</a>
-        </div>
-
-        <address class="pg-footer-company">
-          상호 : 오늘도, 펭긋 <br />
-          대표자 : 김희준 <br />
-          사업자 등록번호 : 000-000-000 <br />
-          소재지 : 경기도 수원시
-        </address>
-      </div>
-
-      <div class="pg-footer-cs">
-        <div class="pg-footer-title">고객센터</div>
-        <div class="pg-footer-contact">
-          1000-1000 <br />
-          9AM - 6PM
-        </div>
-      </div>
-    </div>
-
-    <div class="pg-footer-bottom">
-      <p class="pg-footer-copy">
-        Copyright © 오늘도, 펭긋. All Rights Reserved. Hosting by Cafe24 Corp.
-      </p>
-    </div>
-  </div>
-</footer>
+      <!-- //pg-inner -->
+    </footer>
